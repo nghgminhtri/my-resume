@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Resume</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link href="http://fonts.googleapis.com/css?family=Inconsolata:400|Roboto:400,500,300" rel="stylesheet">
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="bar"></div>
+        <div class="header">
+            <h1 class="name"><% name %></h1>
+            <h2 class="heading muted">{ <% title %> }</h2>
+            <ul class="contact-info">
+                <li class="contact-item">
+                    <span class="glyphicon glyphicon-link"></span>
+                    <a href="http://<% website url %>" target="_blank"><% website %></a>
+                </li>
+                <li class="contact-item">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <a href="https://twitter.com/<% twitter handle %>" target="_blank"><% twitter handle %></a>
+                </li>
+                <li class="contact-item">
+                    <span class="glyphicon glyphicon-envelope"></span>
+                    <a href="mailto:<% email address %>" target="_top"><% email address %></a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="content">
+            <div class="content-section">
+                <h2>work experience</h2>
+                <div class="item">
+                    <h3 class="muted"><% company %>: <% position %><br>{ <% start %> - <% end %> }</h3>
+                    <p><% description %></p>
+                </div>
+                <div class="item">
+                    <h3 class="muted"><% company %>: <% position %><br>{ <% start %> - <% end %> }</h3>
+                    <p><% description %></p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>education</h2>
+                <div class="item">
+                    <h3 class="muted"><% school %>: <% degree %></h3>
+                    <p><% description %></p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>side projects</h2>
+                <div class="item">
+                    <h3 class="muted"><% project %>: <% role %><br>{ <% start %> - <% end %> }</h3>
+                    <p><% description %></p>
+                </div>
+                <div class="item">
+                    <h3 class="muted"><% project %>: <% role %><br>{ <% start %> - <% end %> }</h3>
+                    <p><% description %></p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>technical skills</h2>
+                <div class="item">
+                    <h3 class="muted">Programming Languages</h3>
+                    <ul>
+                        <li><% item %></li>
+                        <li><% item %></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3 class="muted">Tools &amp; Frameworks</h3>
+                    <ul>
+                        <li><% item %></li>
+                        <li><% item %></li>
+                        <li><% item %></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footer">
+            <p class="copyright muted">&copy; 2015</p>
+        </div>
+    </body>
+</html>

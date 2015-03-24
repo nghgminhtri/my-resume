@@ -1,0 +1,101 @@
+/* General
+*************/
+
+html {
+  position: relative;
+  min-height: 100%;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 200;
+}
+
+li, p {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+.muted {
+  color: gray;
+}
+
+hr {
+  width: 90%;
+}
+
+a, a:visited {
+  color: black;
+}
+
+a:hover, a:active {
+  color: gray;
+}
+
+.glyphicon {
+  color: #2e6fa7;
+}
+
+/* Header
+*************/
+
+.bar {
+  width: 100%;
+  background-color: #2e6fa7;
+  height: 8px;
+}
+
+.name, .heading, .contact-info {
+  text-align: center;
+}
+
+.contact-info {
+  line-height: 1.75em;
+  list-style-type: none;
+  padding: 0;
+}
+
+@media only screen and (max-width: 480px) {
+  .heading {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-info li {
+    display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/* Content
+*************/
+
+.content {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.item {
+  margin-left: 20px;
+}
+
+.item p {
+  margin-left: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .item {
+    width: 80%;
+  }
+}
+
+/* Footer
+*************/
+
+.copyright {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 200;
+  text-align: center;
+}
